@@ -20,15 +20,11 @@ nor = ""
 
 def normalize_phone(phone_number) -> list:
     for num in phone_number:
-        number = phone_number.strip(" ()tn\\-" "")
+        number = phone_number.strip(" .+" "")
             
     print(number)
         
-     
-    # print(number)
-    
-    
-    # print(normal)
+
     # return number
 
 

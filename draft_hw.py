@@ -19,16 +19,11 @@ normal = []
 nor =""
 
 def normalize_phone(phone_number) -> list:
-    for num in phone_number:
-        number = num.strip(" ()tn\\-" "")
+    # for num in phone_number:
+    number = phone_number.strip(r" \d\\t+")
             
-        print(number)
-        
-     
-    # print(number)
-    
-    
-    # print(normal)
+    print(number)
+ 
     # return number
 
 

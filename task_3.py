@@ -13,21 +13,18 @@ raw_numbers = [
     "38050 111 22 11   ",
 ]
 
-normal = []
-
-nor = ""
 
 
 def normalize_phone(phone_number) -> list:
-    for num in phone_number:
-        r = re.findall(r"[0123456789]", phone_number)
-    print(r)
-    # number = phone_number.strip(" .+" "")
-            
-    # print(r)
+    phone_number = re.findall(r"[0123456789]", phone_number)
+    print(phone_number)
+    
+    
+    # rr = re.split("", r, flags=re.IGNORECASE)       
+    # print(rr)
         
 
-    # return r
+    return phone_number
 
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]

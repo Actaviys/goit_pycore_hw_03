@@ -1,4 +1,4 @@
-
+import re
 
 #список номерів
 raw_numbers = [
@@ -20,12 +20,14 @@ nor = ""
 
 def normalize_phone(phone_number) -> list:
     for num in phone_number:
-        number = phone_number.strip(" .+" "")
+        r = re.findall(r"[0123456789]", phone_number)
+    print(r)
+    # number = phone_number.strip(" .+" "")
             
-    print(number)
+    # print(r)
         
 
-    # return number
+    # return r
 
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]

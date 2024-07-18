@@ -16,7 +16,7 @@ def get_days_from_today(date_str): #Функція обрахунку
         print(date_r)
     except:
         print("Невірний формат дати")
-        print("Введіть в форматі: (yyyy-mm-dd)-2021-12-09")
+        print("Введіть в форматі: (yyyy-mm-dd)->2021-12-09")
 
 # 2021-12-09
 

@@ -1,34 +1,81 @@
 
+# import re
 
-#Щоб перевірити, що рядок починається з підрядка, є метод startswith:
+# raw_numbers = [
+#     "+38(0 44) 123-4567",
+#     "380501234567",
+#     "    +38(050)123-32-34"
+#     ]
+# raw_numbers = "+38(0 44) 123-4567"
 
-#список номерів
-raw_numbers = [
-    "067\\t123 4567",
-    "(095) 234-5678\\n",
-    "+380 44 123 4567",
-    "380501234567",
-    "    +38(050)123-32-34",
-    "     0503451234",
-    "(050)8889900",
-    "38050-111-22-22",
-    "38050 111 22 11   ",
-]
+# r = str(re.findall(r"[0123456789]", rr))
+# rrr = ''.join(r)
 
-normal = []
-nor =""
+# pattern = r"(\d{0,9})"
+# for res in raw_numbers:
+#     r = str(re.findall(pattern, res))
+#     for t in r:
+#         rr = res.strip('')
+#     print(rr)
 
-def normalize_phone(phone_number) -> list:
-    # for num in phone_number:
-    number = phone_number.strip(r" \d\\t+")
+    
+    # r = re.sub(r"\w\s\W\S\s","",res)
+    
+    # r = str(re.findall(r"[0123456789]", rr))
+    # rrr = ''.join(r)
+    # print(r)
+
+    # rr = ''.join(res)
+    
+    # r = str(re.findall(r"[0123456789]", rr))
+    # rrr = ''.join(r)
+    # print(res)
+    
+    
+    # r = re.search(r"(\b\d+\b)", res)
+    # print(r.groups())
+
+
+#--------------------------------------------------------
+# txt = ",,,,,rrttgg.....banana....rrr"
+
+# x = txt.strip(",.grt")
+
+# print(x)
+
+
+
+
+##################################################################################
+# #Щоб перевірити, що рядок починається з підрядка, є метод startswith:
+
+# #список номерів
+# raw_numbers = [
+#     "067\\t123 4567",
+#     "(095) 234-5678\\n",
+#     "+380 44 123 4567",
+#     "380501234567",
+#     "    +38(050)123-32-34",
+#     "     0503451234",
+#     "(050)8889900",
+#     "38050-111-22-22",
+#     "38050 111 22 11   ",
+# ]
+
+# normal = []
+# nor =""
+
+# def normalize_phone(phone_number) -> list:
+#     # for num in phone_number:
+#     number = phone_number.strip(r" \d\\t+")
             
-    print(number)
+#     print(number)
  
-    # return number
+#     # return number
 
 
-sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
-print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
+# sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
+# print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
 
 
 

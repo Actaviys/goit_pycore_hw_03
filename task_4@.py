@@ -45,6 +45,7 @@ users = [
     {"name": "Viktoria Lopes", "birthday": "2001.07.11"}
 ]
 
+#Виводжу результат
 upcoming_birthdays = get_upcoming_birthdays(users)
 print("Список привітань на цьому тижні:", upcoming_birthdays)
 

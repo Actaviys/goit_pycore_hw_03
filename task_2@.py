@@ -1,7 +1,9 @@
 
 import random
-
-def get_numbers_ticket(min, max, quantity):
+    
+print("|Генератор випадкових чисел \n|З можливістю вибору кількості чисел\n|І min-max, від '1'")
+    
+def get_numbers_ticket(min, max, quantity): #Функція для випадкових чисел
     save = []#Порожній список для рандомних чисел
     result = []#Порожній список для результану чисел
     
@@ -18,8 +20,17 @@ def get_numbers_ticket(min, max, quantity):
     return result#Повертаю результат
 
 
-lottery_numbers = get_numbers_ticket(1, 36, 5)#Зберігаю результат функції
-print("Ваші лотерейні числа:", lottery_numbers)#Виводжу збережений результат
+try:#Перевіряю чи ввели числа
+    i = int(input("Введіть мінімальне число: "))
+    a = int(input("Максимальне число: "))
+    q = int(input("Кількість випадкових чисел: "))
+    lottery_numbers = get_numbers_ticket(i, a, q)#Зберігаю результат функції
+    print("Ваші лотерейні числа:", lottery_numbers)#Виводжу збережений результат
+except:
+    print("Введіть числа")
+
+
+
 
 
 
